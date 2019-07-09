@@ -41,3 +41,7 @@ input[type='submit']:active {
 .form-control:not(:last-child) {
   margin-bottom: 5px;
 }
+.invalid-feedback {
+  border: 1px solid #d72d38;
+  background-color: #d57077;
+}
