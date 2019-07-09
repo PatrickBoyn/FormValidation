@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
   letter-spacing: 3px;
   padding: 1.2rem;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
   display: flex;
   justify-content: center;
 }
