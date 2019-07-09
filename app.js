@@ -29,6 +29,13 @@ function validateName() {
 function validateZipCode() {
   const zip = document.getElementById('zip-code');
   const re = /^[0-9]{5}(-[0-9]{4})?$/;
+
+  console.log(zip.value);
+  console.log(re.test(zip.value));
+
+  if (!re.test(zip.value)) {
+  } else {
+  }
 }
 
 function validateEmail() {}
