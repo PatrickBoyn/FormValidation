@@ -39,6 +39,9 @@ input[type='submit'] {
 input[type='submit']:active {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
 }
+input[type='text'] {
+  padding-left: 3px;
+}
 .form-control:not(:last-child) {
   margin-bottom: 5px;
 }
