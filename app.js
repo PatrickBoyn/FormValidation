@@ -26,7 +26,10 @@ function validateName() {
   }
 }
 
-function validateZipCode() {}
+function validateZipCode() {
+  const zip = document.getElementById('zip-code');
+  const re = /^[0-9]{5}(-[0-9]{4})/;
+}
 
 function validateEmail() {}
 
