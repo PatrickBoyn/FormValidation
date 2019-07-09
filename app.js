@@ -3,7 +3,10 @@ document.getElementById('zip-code').addEventListener('blur', validateZipCode);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('phone').addEventListener('blur', validatePhoneNumber);
 
-function validateName() {}
+function validateName() {
+  const name = document.getElementById('name');
+  const re = /^[a-zA-Z]{2, 10}$/;
+}
 
 function validateZipCode() {}
 
