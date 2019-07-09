@@ -9,7 +9,7 @@ document.getElementById('phone').addEventListener('blur', validatePhoneNumber);
 invalidFeedback.forEach(element => {
   element.style.display = 'none';
 });
-
+// None of this validates if the form is empty when submitted.
 function validateName() {
   const name = document.getElementById('name');
   const re = /^[a-zA-Z]{2,10}$/;
