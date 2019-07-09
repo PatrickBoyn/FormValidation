@@ -1,5 +1,4 @@
 const invalidFeedback = document.querySelectorAll('.invalid-feedback');
-const invalidAdd = document.querySelector('.invalid-feedback');
 
 document.getElementById('name').addEventListener('blur', validateName);
 document.getElementById('zip-code').addEventListener('blur', validateZipCode);
@@ -20,10 +19,10 @@ function validateName() {
 
   if (!re.test(name.value)) {
     name.classList.add('is-invalid');
-    invalidAdd.style.display = 'block';
+    invalidFeedback[0].style.display = 'block';
   } else {
     name.classList.remove('is-invalid');
-    invalidAdd.style.display = 'none';
+    invalidFeedback[0].style.display = 'none';
   }
 }
 
@@ -36,10 +35,10 @@ function validateZipCode() {
 
   if (!re.test(zip.value)) {
     zip.classList.add('is-invalid');
-    invalidAdd.display = 'block';
+    invalidFeedback[1].style.display = 'block';
   } else {
     zip.classList.remove('is-invalid');
-    invalidAdd.display = 'none';
+    invalidFeedback[1].style.display = 'none';
   }
 }
 
