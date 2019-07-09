@@ -6,6 +6,7 @@ document.getElementById('zip-code').addEventListener('blur', validateZipCode);
 document.getElementById('email').addEventListener('blur', validateEmail);
 document.getElementById('phone').addEventListener('blur', validatePhoneNumber);
 
+// Ensures that the warnings are hidden on page load.
 invalidFeedback.forEach(element => {
   element.style.display = 'none';
 });
@@ -34,7 +35,11 @@ function validateZipCode() {
   console.log(re.test(zip.value));
 
   if (!re.test(zip.value)) {
+    zip.classList.add('is-invalid');
+    invalidAdd.display = 'block';
   } else {
+    zip.classList.remove('is-invalid');
+    invalidAdd.display = 'none';
   }
 }
 
