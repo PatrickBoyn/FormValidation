@@ -31,4 +31,6 @@ input[type='submit'] {
   border: none;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #2dcf4a;
+  border: 1px solid darkgreen;
 }
