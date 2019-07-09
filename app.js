@@ -1,4 +1,5 @@
 const invalidFeedback = document.querySelectorAll('.invalid-feedback');
+const invalidAdd = document.querySelector('.invalid-feedback');
 
 document.getElementById('name').addEventListener('blur', validateName);
 document.getElementById('zip-code').addEventListener('blur', validateZipCode);
@@ -15,6 +16,7 @@ function validateName() {
 
   if (!re.test(name.value)) {
     name.classList.add('is-invalid');
+    invalidAdd.style.display = 'block';
   } else {
     name.classList.remove('is-invalid');
   }
