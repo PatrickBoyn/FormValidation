@@ -42,6 +42,10 @@ function validateZipCode() {
   }
 }
 
-function validateEmail() {}
+function validateEmail() {
+  const email = document.getElementById('email');
+  // Should match most email addresses.
+  const re = /^([a-zA-z0-9_\-\.]+)@([a-zA-z0-9_\-\.]+)\.[a-zA-z]{2,5}$/;
+}
 
 function validatePhoneNumber() {}
