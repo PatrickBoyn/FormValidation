@@ -56,4 +56,7 @@ function validateEmail() {
   }
 }
 
-function validatePhoneNumber() {}
+function validatePhoneNumber() {
+  const phone = document.getElementById('phone');
+  const re = /^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+}
